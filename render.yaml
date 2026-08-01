@@ -1,0 +1,21 @@
+# ---------------------------------------------------------------------------
+# Render Blueprint — Backend Deployment
+#
+# This file lets Render build and deploy the FastAPI backend directly from
+# your GitHub repository. Push the project to GitHub, create a new "Blueprint"
+# in Render, and select this repository — Render will find this file and set
+# everything up automatically.
+# ---------------------------------------------------------------------------
+
+services:
+  - type: web
+    name: asd-screening-backend
+    runtime: docker
+    repo: https://github.com/YOUR_USERNAME/ASD_Prediction
+    plan: free
+    dockerContext: ./backend
+    healthCheckPath: /health
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://YOUR_FRONTEND.vercel.app
+

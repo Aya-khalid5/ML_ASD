@@ -1,0 +1,17 @@
+# Web framework and server
+fastapi==0.140.0
+uvicorn[standard]==0.51.0
+pydantic==2.13.4
+
+# Data handling (same versions used to train the model)
+pandas==2.3.3
+numpy==2.3.4
+scikit-learn==1.9.0
+imbalanced-learn==0.14.2
+xgboost==3.3.0
+joblib==1.5.3
+
+# Test client dependency
+httpx==0.28.1
+pytest==8.3.4
+

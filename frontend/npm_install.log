@@ -1,0 +1,20 @@
+﻿npm : npm warn tar TAR_ENTRY_ERROR EPERM: operation not permitted, open 'C:\Users\asd\OneDrive\Desktop\Machine 
+Learning\ASD_Prediction\ASD_Prediction\frontend\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node'
+At line:1 char:234
++ ... ortable\node-v20.18.0-win-x64;" + $env:PATH; npm install 2>&1 | Out-F ...
++                                                  ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn tar TA...-x64-msvc.node':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm error code ENOTEMPTY
+npm error syscall rmdir
+npm error path C:\Users\asd\OneDrive\Desktop\Machine Learning\ASD_Prediction\ASD_Prediction\frontend\node_modules\@swc\helpers\src
+npm error errno -4051
+npm error ENOTEMPTY: directory not empty, rmdir 'C:\Users\asd\OneDrive\Desktop\Machine 
+Learning\ASD_Prediction\ASD_Prediction\frontend\node_modules\@swc\helpers\src'
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 12.0.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+npm notice To update run: npm install -g npm@12.0.2
+npm notice
+npm error A complete log of this run can be found in: C:\Users\asd\AppData\Local\npm-cache\_logs\2026-08-01T17_47_42_752Z-debug-0.log

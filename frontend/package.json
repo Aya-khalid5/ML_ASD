@@ -1,0 +1,18 @@
+{
+  "name": "asd-screening-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend for the ASD Screening AI application built with Next.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
+
