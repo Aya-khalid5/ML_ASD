@@ -20,5 +20,5 @@ COPY artifacts ./artifacts
 # Run the API. Uvicorn binds to 0.0.0.0 so the container is reachable
 # from outside (required by Docker and Render).
 EXPOSE 8000
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "run.py"]
 
