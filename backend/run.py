@@ -1,10 +1,15 @@
 import os
-import uvicorn
+import subprocess
+import sys
 
-port = int(os.environ.get("PORT", 8000))
+port = os.environ.get("PORT", "8501")
 
-uvicorn.run(
-    "app.main:app",
-    host="0.0.0.0",
-   port=int(os.environ.get("PORT", 8000)),
-)
+subprocess.run([
+    sys.executable,
+    "-m",
+    "streamlit",
+    "run",
+    "app.py",
+    "--server.address=0.0.0.0",
+    f"--server.port={port}",
+])
